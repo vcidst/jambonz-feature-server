@@ -87,4 +87,4 @@ module.exports = {
 
 #### Running the test suite
 
-Please [see this]](./docs/contributing.md#run-the-regression-test-suite).
+Please [see this](./docs/contributing.md#run-the-regression-test-suite).
