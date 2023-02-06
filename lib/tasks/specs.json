@@ -42,10 +42,27 @@
       "recognizer": "#recognizer",
       "bargeIn": "#bargeIn",
       "record": "#recordOptions",
+      "listen": "#listenOptions",
       "amd": "#amd",
       "notifyEvents": "boolean"
     },
     "required": []
+  },
+  "listenOptions": {
+    "properties": {
+      "enable": "boolean",
+      "url": "string",
+      "sampleRate": "number",
+      "wsAuth": "#auth",
+      "mixType": {
+        "type": "string",
+        "enum": ["mono", "stereo", "mixed"]
+      },
+      "metadata": "object"
+    },
+    "required": [
+      "enable"
+    ]
   },
   "bargeIn": {
     "properties": {
@@ -275,6 +292,7 @@
       },
       "passDtmf": "boolean",
       "playBeep": "boolean",
+      "disableBidirectionalAudio": "boolean",
       "sampleRate": "number",
       "timeout": "number",
       "transcribe": "#transcribe",
